@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Header from './components/Header'
-import MainContent from './components/MainContent'
-import Footer from './components/Footer'
+import Product from './components/Product'
+import productsData from './components/myProducts'
 
 function App() {
+  const productsList = productsData.map( product => <Product key={product.id} product={product} /> )
+
+
   return(
     <div>
-      <Header />
-      <MainContent />
-      <Footer />
+      {productsList}
     </div>
   )
 }

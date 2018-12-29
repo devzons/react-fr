@@ -1,12 +1,14 @@
 import React from 'react'
 
+import TodoItem from './TodoItem'
+
 function MainContent() {
   return(
     <main>
-      <p><input type="checkbox" /> Paragraph 1</p>
-      <p><input type="checkbox" /> Paragraph 2</p>
-      <p><input type="checkbox" /> Paragraph 3</p>
-      <p><input type="checkbox" /> Paragraph 4</p>
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
     </main>
   )
 }

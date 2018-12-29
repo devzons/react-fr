@@ -5,4 +5,3 @@ import App from './App'
 
 ReactDOM.render(<App />, document.getElementById("root"))
 
-// Stop at 1:02:13
