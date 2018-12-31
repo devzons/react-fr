@@ -1,30 +1,12 @@
-import React from 'react';
+// https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
 
-class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      isLoggedIn: true
-    }
-    this.handleClick = this.handleClick.bind(this)
-  }
+import React from 'react'
+import FormContainer from './FormContainer'
 
-  handleClick() {
-    this.setState(prevState => {
-      return {
-        isLoggedIn: !prevState.isLoggedIn
-      }
-    })
-  }
-
-  render() {
-    let buttonText = this.state.isLoggedIn ? "LOG OUT" : "LOG IN"
-    return (
-      <div>
-        <button onclick={this.handleClick}>{buttonText}</button>
-      </div>
-    )
-  }
+function App() {
+  return(
+    <FormContainer />
+  )
 }
 
-export default App;
+export default App
